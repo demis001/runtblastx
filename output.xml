@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20150407 12:13:35.299" generator="Robot 2.8.7 (Python 2.7.8 on linux2)">
+<suite source="/home/AMED/michael.panciera/projects/python_template/tests/robot.txt" id="s1" name="Robot">
+<test id="s1-t1" name="Example">
+<kw type="kw" name="${result} = Process.Run Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>echo</arg>
+<arg>"foo"</arg>
+</arguments>
+<msg timestamp="20150407 12:13:35.326" level="INFO">Starting process:
+['echo', '"foo"']</msg>
+<msg timestamp="20150407 12:13:35.328" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20150407 12:13:35.328" level="INFO">Process completed.</msg>
+<msg timestamp="20150407 12:13:35.328" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" endtime="20150407 12:13:35.328" starttime="20150407 12:13:35.326"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Contain">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>${result.stdout}</arg>
+<arg>foo</arg>
+</arguments>
+<status status="PASS" endtime="20150407 12:13:35.329" starttime="20150407 12:13:35.328"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20150407 12:13:35.329" critical="yes" starttime="20150407 12:13:35.326"></status>
+</test>
+<test id="s1-t2" name="python_template Main">
+<kw type="kw" name="${result} = Process.Run Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>python_template</arg>
+</arguments>
+<msg timestamp="20150407 12:13:35.330" level="INFO">Starting process:
+['python_template']</msg>
+<msg timestamp="20150407 12:13:35.333" level="FAIL">OSError: [Errno 2] No such file or directory</msg>
+<status status="FAIL" endtime="20150407 12:13:35.333" starttime="20150407 12:13:35.330"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150407 12:13:35.333" critical="yes" starttime="20150407 12:13:35.329">OSError: [Errno 2] No such file or directory</status>
+</test>
+<kw type="teardown" name="Process.Terminate All Processes">
+<doc>Terminates all still running processes started by this library.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150407 12:13:35.334" starttime="20150407 12:13:35.334"></status>
+</kw>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150407 12:13:35.334" starttime="20150407 12:13:35.300"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" pass="1" id="s1" name="Robot">Robot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
