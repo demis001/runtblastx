@@ -1,5 +1,15 @@
 python_template
 ===============
+.. image:: https://readthedocs.org/projects/python-template/badge/?version=latest
+    :target: http://python-template.readthedocs.org/en/latest/
+    :alt: Documentation Status
+
+.. image:: https://travis-ci.org/VDBWRAIR/python_template.svg
+    :target: https://travis-ci.org/VDBWRAIR/python_template
+
+.. image:: https://coveralls.io/repos/VDBWRAIR/python_template/badge.svg
+    :target: https://coveralls.io/r/VDBWRAIR/python_template
+
 
 This is the template for WRAIR python projects that will help you quickly setup
 a base project that you can easily expand upon.
