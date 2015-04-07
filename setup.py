@@ -13,7 +13,7 @@ setup(
     keywords = python_template.__keywords__,
     entry_points = {
         'console_scripts': [
-            'python_template = python_template:main'
+            'python_template = python_template.python_template:main'
         ],
     },
 )
