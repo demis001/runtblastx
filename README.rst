@@ -1,4 +1,4 @@
-your_project
+python_template
 ===============
 
 This is the template for WRAIR python projects that will help you quickly setup
@@ -23,13 +23,13 @@ How To Use
 #. Rename the directory to your project name
 #. Modify the git origin remote so it points to your new project's github 
    project
-#. Anywhere you see your_project you will need to rename that to your
+#. Anywhere you see python_template you will need to rename that to your
    project name.
-   The following should work to rename all your_project to your_project
+   The following should work to rename all python_template to your_project
 
     .. code-block:: bash
 
-        find . -path ./.git -prune -o -type f sed -i 's/your_project/your_project/g' * */*
+        find . -path ./.git -prune -o -type f sed -i 's/python_template/your_project/g' * */*
 
 Travis CI
 ---------
