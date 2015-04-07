@@ -10,6 +10,6 @@ install:
 before_script:
     - export PATH=$PATH:$PWD/bin
 script: 
-    - nosetests  --with-coverage --cover-erase --cover-package=python_template 
+    - nosetests --with-coverage --cover-erase --cover-package=python_template 
 after_success:
     - coveralls
