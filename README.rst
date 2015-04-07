@@ -1,4 +1,4 @@
-python_template
+your_project
 ===============
 
 This is the template for WRAIR python projects that will help you quickly setup
@@ -8,12 +8,13 @@ Features
 --------
 
 * .travis.yml to hook in with https://travis-ci.org
+* .travis.yml pushes to https://coveralls.io
+* sphinx docs directory for your documentation that can be hooked into 
+  Read The Docs
 * tox.ini to allow you to easily run tests through different python environments
 * tests directory stub
 * python package directory
 * setup.py installation script
-* sphinx docs directory for your documentation that can be hooked into 
-  Read The Docs
 
 How To Use
 ----------
@@ -22,17 +23,13 @@ How To Use
 #. Rename the directory to your project name
 #. Modify the git origin remote so it points to your new project's github 
    project
-#. Anywhere you see python_template you will need to rename that to your
+#. Anywhere you see your_project you will need to rename that to your
    project name.
-    * setup.py
-    * python_template/
-    * tox.ini  
-    * .travis.yml
-    * python_template/__init__.py
+   The following should work to rename all your_project to your_project
 
     .. code-block:: bash
 
-        sed -i 's/python_template/your_project/g' * */*
+        find . -path ./.git -prune -o -type f sed -i 's/your_project/your_project/g' * */*
 
 Travis CI
 ---------
