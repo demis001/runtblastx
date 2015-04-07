@@ -1,4 +1,3 @@
 nose
 mock
-python-coveralls
-robotframework
+python-coveralls 
