@@ -1,19 +1,19 @@
 from setuptools import setup, find_packages
 
-import python_template
+import runtblastx
 
 setup(
-    name = python_template.__projectname__,
-    version = python_template.__release__,
+    name = runtblastx.__projectname__,
+    version = runtblastx.__release__,
     packages = find_packages(),
-    author = python_template.__authors__,
-    author_email = python_template.__authoremails__,
-    description = python_template.__description__,
+    author = runtblastx.__authors__,
+    author_email = runtblastx.__authoremails__,
+    description = runtblastx.__description__,
     license = "GPLv2",
-    keywords = python_template.__keywords__,
+    keywords = runtblastx.__keywords__,
     entry_points = {
         'console_scripts': [
-            'python_template = python_template.python_template:main'
+            'runtblastx = runtblastx.runtblastx:main'
         ],
     },
 )
