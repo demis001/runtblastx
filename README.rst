@@ -4,11 +4,9 @@ runtblastx
     :target: http://python-template.readthedocs.org/en/latest/
     :alt: Documentation Status
 
-.. image:: https://travis-ci.org/VDBWRAIR/runtblastx.svg
-    :target: https://travis-ci.org/VDBWRAIR/runtblastx
+.. image:: https://travis-ci.org/demis001/runtblastx.svg
+    :target: https://travis-ci.org/demis001/runtblastx
 
-.. image:: https://coveralls.io/repos/VDBWRAIR/runtblastx/badge.svg
-    :target: https://coveralls.io/r/VDBWRAIR/runtblastx
 
 
 
