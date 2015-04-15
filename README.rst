@@ -39,7 +39,7 @@ How To Use
 
     .. code-block:: bash
 
-        find . -path ./.git -prune -o -type f sed -i 's/python_template/your_project/g' * */*
+        find . -path ./.git -prune -o -type f -exec sed -i 's/python_template/your_project/g' {} \;
 
 Travis CI
 ---------
