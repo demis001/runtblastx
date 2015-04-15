@@ -12,7 +12,6 @@ def returns_opposite(bool):
 
 def main():
     print("specific output\n")
-    print("My second test.....\n")
 
 
 
